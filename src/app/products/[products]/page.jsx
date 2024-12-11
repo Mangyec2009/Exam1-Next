@@ -68,7 +68,7 @@ const Productsid = async({params}) => {
         },
       ];
     let {products} = await params;
-    let el = data[products];
+    let el = data[products+1];
   return <>
     <div className='max-w-[1500px] mx-auto h-screen flex justify-between items-center'>
         <Image src={el.img} width={500} alt='' height={0} className='w-[50%]' />
